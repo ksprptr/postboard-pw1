@@ -1,3 +1,7 @@
+# Posts/PW-1
+
+System for displaying and creating posts using HTTP requests.
+
 ## Dependencies
 
 [Node.js](https://nodejs.org/en) version `18 or later..`
@@ -6,13 +10,13 @@
 
 ## Installation
 
-First go to project folder using
+Go to project folder
 
 ```bash
-cd prispevky-pw1/
+cd posts-pw1/
 ```
 
-Then install all dependencies using
+Install all dependencies
 
 ```bash
 pnpm install
