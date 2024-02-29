@@ -7,22 +7,45 @@ interface Props extends ExtendedProps {
   name: string;
   value?: any;
   label?: string;
-  error?: string | boolean;
+  error?: string | false;
   placeholder?: string;
   onChange?: (value: any) => void;
 }
 
 /**
- * Component representing an input field
+ * Component representing input field
  */
-export default function InputField({ type = "text", name, value, label, error, placeholder, onChange, children, className }: Props) {
+export default function InputField({
+  type = "text",
+  name,
+  value,
+  label,
+  error,
+  placeholder,
+  onChange,
+  children,
+  className,
+  style,
+}: Props) {
   return (
-    <div className="mt-4">
-      {label && <label htmlFor={name}>{label}</label>}
-      <Field name={name} type={type} placeholder={placeholder} value={value} {...(onChange ? (e: any) => onChange(e.target.value) : {})} className={`${className}`}>
+    <div className="flex flex-col">
+      {label && (
+        <label htmlFor={name} className="text-zinc-600">
+          {label}
+        </label>
+      )}
+      <Field
+        name={name}
+        type={type}
+        placeholder={placeholder}
+        value={value}
+        {...(onChange ? (e: any) => onChange(e.target.value) : {})}
+        className={`bg-zinc-100 border border-1 border-zinc-200 px-4 py-2 rounded-lg placeholder:text-zinc-400 mt-2 focus:outline-none ${className}`}
+        style={style}
+      >
         {children}
       </Field>
-      <div className="text-red-500 text-sm my-2">{error}</div>
+      <div className="text-red-500 text-xs my-2">{error}</div>
     </div>
   );
 }
