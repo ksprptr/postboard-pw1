@@ -64,7 +64,7 @@ export default function NewPostForm() {
     if (response.error) {
       setStatusMsg({
         type: StatusType.ERROR,
-        message: "Error occurred while creating post.",
+        message: `Error occurred while creating post. (${response.error.message})`,
       });
       return;
     }
