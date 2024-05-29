@@ -10,7 +10,7 @@ System for displaying and creating posts using HTTP requests.
 
 ## Installation
 
-Go to project folder
+Go to the project folder
 
 ```bash
 cd posts-pw1/
