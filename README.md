@@ -1,4 +1,4 @@
-# Posts/PW-1
+# Post System
 
 System for displaying and creating posts using HTTP requests.
 
