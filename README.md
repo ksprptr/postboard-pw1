@@ -1,31 +1,38 @@
-# Post System
+# Postboard
 
-System for displaying and creating posts using HTTP requests.
+> A simple web application for a PW1 school project, designed to practice working with HTTP requests. It includes a page for viewing posts and another for creating them.
 
-## Dependencies
+- [Prerequisites](#Prerequisites)
+- [Installation](#Installation)
+- [Run](#Run)
+- [Configuration](#Configuration)
+- [License](#License)
 
-[Node.js](https://nodejs.org/en) version `18 or later..`
+## Prerequisites
 
-[pnpm](https://pnpm.io/installation) version `8 or later..`
+- Knowledge of JavaScript/TypeScript, [React](https://react.dev/), Git
+- IDE ([VS Code](https://code.visualstudio.com/), WebStorm, ...)
+- Package manager ([pnpm](https://pnpm.io/installation), npm, ...)
 
 ## Installation
 
-Go to the project folder
+- Go to the project folder using `cd postboard-pw1/`
+- Install all dependecies using `pnpm install`
 
-```bash
-cd posts-pw1/
-```
+## Run
 
-Install all dependencies
+- Development server: `pnpm run dev`
+- Production: `pnpm run build & pnpm run start`
 
-```bash
-pnpm install
-```
+## Configuration
 
-Start live server
+| Description       | Values                 |
+| ----------------- | ---------------------- |
+| **Ports:**        | 3000                   |
+| **Technologies:** | Next.js                |
+| **URL:**          | http://localhost:3000/ |
 
-```bash
-pnpm run start
-```
+## License
 
-Open [localhost:3000](http://localhost:3000) in your browser to see the project home page.
+> This software is developed by **Petr Kašpar** and is licensed under the MIT License.  
+> For more details, please refer to the [LICENSE](./LICENSE) file.
