@@ -1,7 +1,10 @@
 {
-  "name": "posts-pw1",
+  "name": "postboard-pw1",
   "version": "0.1.0",
+  "description": "A simple web application for a PW1 school project, designed to practice working with HTTP requests. It includes a page for viewing posts and another for creating them.",
   "private": true,
+  "author": "Petr Kašpar",
+  "license": "MIT",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
